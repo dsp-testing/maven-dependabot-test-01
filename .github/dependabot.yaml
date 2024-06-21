@@ -1,14 +1,9 @@
 version: 2
 updates:
   - package-ecosystem: maven
-    directory: .
+    directory: /
     schedule:
       interval: daily
-  - package-ecosystem: maven
-    directory: foo
-    schedule:
-      interval: daily
-  - package-ecosystem: maven
-    directory: bar
-    schedule:
-      interval: daily
+    ignore:
+    - dependency-name: "org.flywaydb:flyway-core"
+      versions: ["8.x"]
