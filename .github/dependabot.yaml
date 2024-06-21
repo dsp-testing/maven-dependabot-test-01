@@ -7,4 +7,4 @@ updates:
       interval: daily
     ignore:
     - dependency-name: "org.flywaydb:flyway-core"
-      versions: ["8.x"]
+      versions: ["10.x"]
